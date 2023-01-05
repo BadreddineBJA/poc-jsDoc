@@ -1,0 +1,16 @@
+const jsdoc = require("json-schema-to-jsdoc");
+
+const schema = {
+  title: "Person",
+  type: "object",
+  properties: {
+    name: { type: "string", description: "A person's name" },
+    age: { type: "integer", description: "A person's age" },
+  },
+  required: ["name"],
+};
+
+console.log(jsdoc(schema /* , optionsObject */));
+
+
+
